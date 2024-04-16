@@ -8,7 +8,7 @@ public class Timer : MonoBehaviour
 {
     private TMP_Text _timerText;
     enum TimerType {Countdown, Stopwatch}
-    [SerializeField] private TimerType _timerType;
+    [SerializeField] private TimerType timerType;
 
     [SerializeField] private float timeToDisplay = 60.0f;
 
@@ -42,10 +42,14 @@ public class Timer : MonoBehaviour
     private void Update()
     {
         if (!_isRunning) return;
-        if (timerType == TimerType.Countdown && timeToDisplay < 0.0f) return;
+        if (timerType == TimerType.Countdown && timeToDisplay < 0.0f)
+        {
+            EventManager.OnTimerStop();
+            return;
+        }
         timeToDisplay += timerType == TimerType.Countdown ? -Time.deltaTime : Time.deltaTime;
 
         TimeSpan timeSpan = TimeSpan.FromSeconds(timeToDisplay);
-        _timerText.text = timeSpan.ToString(format@"mm\:ss\:ff");
+        _timerText.text = timeSpan.ToString(@"mm\:ss\:ff");
     }
 }
