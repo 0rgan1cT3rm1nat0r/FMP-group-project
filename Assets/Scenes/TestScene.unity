@@ -379,7 +379,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerType: 0
-  timeToDisplay: 60
+  timeToDisplay: 3600
 --- !u!114 &1897403307
 MonoBehaviour:
   m_ObjectHideFlags: 0
