@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,9 +9,11 @@ public class paintGM : MonoBehaviour
     public KeyCode mouseleft;
     public static string tooltype;
 
+    bool paper = false;
+
     void Start()
     {
-
+        paper = false;
     }
 
     void Update()
@@ -18,11 +21,21 @@ public class paintGM : MonoBehaviour
         Vector2 mousePosition = new Vector2 (Input.mousePosition.x, Input.mousePosition.y);
         Vector2 objPosition = Camera.main.ScreenToWorldPoint (mousePosition);
 
-        if (Input.GetKey (mouseleft))
+        if (mousePosition.y < 700 && mousePosition.y > 200 && mousePosition.x < 1350 && mousePosition.x > 500)
         {
-            Instantiate (baseDot, objPosition, baseDot.rotation);
-
-
+            paper = true;
         }
+        else
+        {
+            paper = false;
+        }
+
+
+        if (Input.GetKey(mouseleft) && paper)
+        {
+            
+            Instantiate(baseDot, objPosition, baseDot.rotation);
+        }
+        
     }
 }
