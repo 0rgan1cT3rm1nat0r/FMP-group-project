@@ -15,4 +15,10 @@ public class dotcontrol : MonoBehaviour
     {
         
     }
+
+    void OnMouseOver()
+    {
+        if (paintGM.tooltype == "eraser")
+            Destroy(gameObject);
+    }
 }

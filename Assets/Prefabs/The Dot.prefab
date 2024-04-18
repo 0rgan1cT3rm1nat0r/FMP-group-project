@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 477926890778533300}
   - component: {fileID: 4014137988723273471}
   - component: {fileID: 204154630617684964}
+  - component: {fileID: -391226108409283222}
   m_Layer: 0
   m_Name: The Dot
   m_TagString: Untagged
@@ -120,3 +121,15 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.16
+--- !u!114 &-391226108409283222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8712435729378039739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c88dd9fe1b145940ae6ab1a3499105b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

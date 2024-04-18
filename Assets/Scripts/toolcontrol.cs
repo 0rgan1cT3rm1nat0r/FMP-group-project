@@ -16,8 +16,16 @@ public class toolcontrol : MonoBehaviour
 
     void OnMouseDown()
     {
-        paintGM.tooltype = "eraser";
-        //Debug.Log("erase selected");
+        if (gameObject.name == "icon eraser")
+        {
+            paintGM.tooltype = "eraser";
+            //Debug.Log("erase selected");
+        }
 
+        if (gameObject.name == "icon pencil")
+        {
+            paintGM.tooltype = "pencil";
+            //Debug.Log("pencil selected");
+        }
     }
 }
