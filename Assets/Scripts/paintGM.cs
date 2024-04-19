@@ -8,6 +8,8 @@ public class paintGM : MonoBehaviour
     public Transform baseDot;
     public KeyCode mouseleft;
     public static string tooltype;
+    public static Color currentColor;
+    public static int currentOrder;
 
     bool paper = false;
 
