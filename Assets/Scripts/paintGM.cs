@@ -21,7 +21,7 @@ public class paintGM : MonoBehaviour
         Vector2 mousePosition = new Vector2 (Input.mousePosition.x, Input.mousePosition.y);
         Vector2 objPosition = Camera.main.ScreenToWorldPoint (mousePosition);
 
-        if (mousePosition.y < 700 && mousePosition.y > 200 && mousePosition.x < 1350 && mousePosition.x > 500)
+        if (mousePosition.y < 992 && mousePosition.y > 548 && mousePosition.x < 1395 && mousePosition.x > 536)
         {
             paper = true;
         }
