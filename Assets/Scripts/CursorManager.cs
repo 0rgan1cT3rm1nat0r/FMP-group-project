@@ -10,4 +10,9 @@ public class CursorManager : MonoBehaviour
     {
         Cursor.SetCursor(cursorTexture, new Vector2(92, 37), CursorMode.Auto);
     }
+
+    private void Update()
+    {
+        
+    }
 }
