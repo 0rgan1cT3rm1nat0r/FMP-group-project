@@ -211,6 +211,10 @@ PrefabInstance:
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1807427582400091197, guid: 8efbed48a3581324989bf7ad5fc3bb4a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1807427582400091197, guid: 8efbed48a3581324989bf7ad5fc3bb4a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -220,7 +224,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1807427582400091197, guid: 8efbed48a3581324989bf7ad5fc3bb4a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1807427582400091197, guid: 8efbed48a3581324989bf7ad5fc3bb4a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -662,7 +666,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   penTexture: {fileID: 2800000, guid: bf7260b971cc1384ba99ecc3f0736948, type: 3}
-  eraserTexture: {fileID: 2800000, guid: 7d0c3083476eb464d99157fe0c72ed78, type: 3}
+  eraserTexture: {fileID: 2800000, guid: fa576d633d920574c9b604c40d766f36, type: 3}
 --- !u!4 &984130555
 Transform:
   m_ObjectHideFlags: 0
