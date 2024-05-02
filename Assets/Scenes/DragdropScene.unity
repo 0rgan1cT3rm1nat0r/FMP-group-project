@@ -252,7 +252,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 786, y: 410}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1018641361
@@ -305,6 +305,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cac9b6d975846b641a10a06aabb99da9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stickerPrefab: {fileID: 1018641359}
 --- !u!114 &1018641364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -330,6 +331,7 @@ GameObject:
   - component: {fileID: 1374482934}
   - component: {fileID: 1374482933}
   - component: {fileID: 1374482932}
+  - component: {fileID: 1374482936}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -421,6 +423,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1374482936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374482931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2943ba29119d2f4f9465275ffd21b7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1651576063
 GameObject:
   m_ObjectHideFlags: 0
