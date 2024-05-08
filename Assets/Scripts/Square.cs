@@ -26,7 +26,10 @@ public class Square : MonoBehaviour, ICustomDrag
 
         if (mousePosition.x > 1700 && mousePosition.x < 1800 && mousePosition.y > 900 && mousePosition.y < 1000 && Input.GetMouseButtonDown(0))
         {
-            Instantiate(stickerPrefab, new Vector2(1, 1), Quaternion.identity);
+            //Instantiate(stickerPrefab, new Vector2(100, 100), Quaternion.identity);
+
+            GameObject sticker = Instantiate(stickerPrefab, new Vector2(100,100), Quaternion.identity) as GameObject; 
+            sticker.transform.SetParent(GameObject.FindGameObjectWithTag("Canvas").transform, false);
         }
     }
 }
