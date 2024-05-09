@@ -4,7 +4,7 @@ using Unity.Android.Types;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class Square : MonoBehaviour, ICustomDrag
+public class Duplicate : MonoBehaviour, ICustomDrag
 {
     private RectTransform rectTransform;
     public GameObject stickerPrefab;
@@ -24,7 +24,7 @@ public class Square : MonoBehaviour, ICustomDrag
         Vector2 mousePosition = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
         Vector2 objPosition = Camera.main.ScreenToWorldPoint(mousePosition);
 
-        if (mousePosition.x > 1700 && mousePosition.x < 1800 && mousePosition.y > 900 && mousePosition.y < 1000 && Input.GetMouseButtonDown(0))
+        if (mousePosition.x > 1600 && mousePosition.x < 1900 && mousePosition.y > 800 && mousePosition.y < 1000 && Input.GetMouseButtonDown(0))
         {
             //Instantiate(stickerPrefab, new Vector2(100, 100), Quaternion.identity);
 
