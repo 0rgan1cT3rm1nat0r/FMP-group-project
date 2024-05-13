@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class Timer : MonoBehaviour
@@ -10,7 +11,7 @@ public class Timer : MonoBehaviour
     enum TimerType {Countdown, Stopwatch}
     [SerializeField] private TimerType timerType;
 
-    [SerializeField] private float timeToDisplay = 60.0f;
+    [SerializeField] private float timeToDisplay;
 
     private bool _isRunning;
 
@@ -51,5 +52,11 @@ public class Timer : MonoBehaviour
 
         TimeSpan timeSpan = TimeSpan.FromSeconds(timeToDisplay);
         _timerText.text = timeSpan.ToString(@"mm\:ss\:ff");
+
+        if (timeToDisplay == 0)
+        {
+            Debug.Log("End");
+            SceneManager.LoadScene("Game over", LoadSceneMode.Single);
+        }
     }
 }
