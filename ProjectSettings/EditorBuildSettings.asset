@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/RestartedScene.unity
     guid: bc0899855a4988749ac0a2f8b99eed81
+  - enabled: 1
+    path: Assets/Scenes/CutScene.unity
+    guid: 848d61fc7f99b5e498bda43e084f132d
   m_configObjects: {}
