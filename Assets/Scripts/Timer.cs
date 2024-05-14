@@ -45,6 +45,8 @@ public class Timer : MonoBehaviour
         if (!_isRunning) return;
         if (timerType == TimerType.Countdown && timeToDisplay < 0.0f)
         {
+            Debug.Log("End");
+            SceneManager.LoadScene("Game over");
             EventManager.OnTimerStop();
             return;
         }
@@ -52,11 +54,5 @@ public class Timer : MonoBehaviour
 
         TimeSpan timeSpan = TimeSpan.FromSeconds(timeToDisplay);
         _timerText.text = timeSpan.ToString(@"mm\:ss\:ff");
-
-        if (timeToDisplay == 0)
-        {
-            Debug.Log("End");
-            SceneManager.LoadScene("Game over", LoadSceneMode.Single);
-        }
     }
 }

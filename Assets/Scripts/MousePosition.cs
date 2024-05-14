@@ -14,6 +14,6 @@ public class MousePosition : MonoBehaviour
     void Update()
     {
         Vector3 mousePosScreen = Input.mousePosition;
-        Debug.Log(mousePosScreen);
+        //Debug.Log(mousePosScreen);
     }
 }

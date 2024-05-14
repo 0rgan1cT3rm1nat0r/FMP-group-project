@@ -6,10 +6,16 @@ using UnityEngine.SceneManagement;
 public class MainMenuController : MonoBehaviour
 {
     public CanvasGroup OptionPanel;
+    public string sceneToLoad;
 
     public void PlayGame()
     {
         SceneManager.LoadScene("TestScene2");
+    }
+
+    public void LoadCustomScene()
+    {
+        SceneManager.LoadScene(sceneToLoad);
     }
 
     public void Option()
