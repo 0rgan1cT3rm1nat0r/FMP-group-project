@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -13,6 +14,11 @@ public class MainMenuController : MonoBehaviour
         SceneManager.LoadScene("TestScene2");
     }
 
+    public void Credits()
+    {
+        SceneManager.LoadScene("CreditsScene");
+
+    }
     public void LoadCustomScene()
     {
         SceneManager.LoadScene(sceneToLoad);
@@ -34,4 +40,6 @@ public class MainMenuController : MonoBehaviour
     {
         Application.Quit();
     }
+
+
 }
