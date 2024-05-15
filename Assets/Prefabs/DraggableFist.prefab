@@ -12,12 +12,12 @@ GameObject:
   - component: {fileID: 8553039162539755357}
   - component: {fileID: 7350090692922954151}
   - component: {fileID: 7651544019349210433}
-  - component: {fileID: -8566859174017433350}
   - component: {fileID: 3947134716474532339}
   - component: {fileID: 153231722229547383}
+  - component: {fileID: -7220539382553188396}
   m_Layer: 5
   m_Name: DraggableFist
-  m_TagString: Untagged
+  m_TagString: Fist
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -93,20 +93,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToInteractWith: {fileID: 2358513410623920764}
---- !u!114 &-8566859174017433350
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2358513410623920764}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cac9b6d975846b641a10a06aabb99da9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  stickerPrefab: {fileID: 2358513410623920764}
-  sticker2Prefab: {fileID: 0}
 --- !u!61 &3947134716474532339
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -179,3 +165,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-7220539382553188396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2358513410623920764}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cac9b6d975846b641a10a06aabb99da9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stickerPrefab: {fileID: 2358513410623920764}

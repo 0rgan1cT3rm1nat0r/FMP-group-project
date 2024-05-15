@@ -238,7 +238,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stickerPrefab: {fileID: 313239613345471193, guid: 3af60853bff56a44baa18fb93aa2b9c5, type: 3}
-  sticker2Prefab: {fileID: 0}
 --- !u!1 &1073509802
 GameObject:
   m_ObjectHideFlags: 0
@@ -524,7 +523,7 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2560557678352444172, guid: 898d67d65c1a862489f0f11d2c97d48f, type: 3}
   m_PrefabInstance: {fileID: 6192064388156085449}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2019644478
+--- !u!114 &2019644482
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -533,10 +532,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2019644470}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cac9b6d975846b641a10a06aabb99da9, type: 3}
+  m_Script: {fileID: 11500000, guid: 1203c7d1f8528224cbe0b8be921409a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stickerPrefab: {fileID: 0}
   sticker2Prefab: {fileID: 2358513410623920764, guid: 898d67d65c1a862489f0f11d2c97d48f, type: 3}
 --- !u!1001 &3640496796759421134
 PrefabInstance:
@@ -660,10 +658,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1073509806}
     m_Modifications:
-    - target: {fileID: -8566859174017433350, guid: 898d67d65c1a862489f0f11d2c97d48f, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 153231722229547383, guid: 898d67d65c1a862489f0f11d2c97d48f, type: 3}
       propertyPath: m_Simulated
       value: 1
@@ -769,13 +763,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: -8566859174017433350, guid: 898d67d65c1a862489f0f11d2c97d48f, type: 3}
+    - {fileID: 0}
     - {fileID: 3947134716474532339, guid: 898d67d65c1a862489f0f11d2c97d48f, type: 3}
     - {fileID: 153231722229547383, guid: 898d67d65c1a862489f0f11d2c97d48f, type: 3}
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2358513410623920764, guid: 898d67d65c1a862489f0f11d2c97d48f, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2019644478}
+      addedObject: {fileID: 2019644482}
   m_SourcePrefab: {fileID: 100100000, guid: 898d67d65c1a862489f0f11d2c97d48f, type: 3}
