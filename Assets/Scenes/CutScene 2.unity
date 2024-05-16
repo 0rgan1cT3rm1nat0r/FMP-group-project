@@ -209,7 +209,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1011562222}
         m_TargetAssemblyTypeName: MainMenuController, Assembly-CSharp
-        m_MethodName: LoadCutScene2
+        m_MethodName: Credits
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -631,11 +631,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Marrissa: I need picket signs for climate justice ASAP! Ya think you can
-    do that?! This is very serious stuff! If we don''t rally for change, it''s good
-    night earth! Not to mention the polar bears!!!
-
-'
+  m_text: "Marrissa:HEY! Ya did good work today! Think we made a real dent!  Apparently
+    they\u2019re actually acknowledging what we\u2019re saying! ACTUAL PROPPER CHANGE!
+    HAHAAA!!!\r\n\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}

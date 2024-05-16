@@ -28,7 +28,7 @@ public class TargetTrigger : MonoBehaviour
     {
         if (FistDetected == true && ScorchedDetected == true && tim.done)
         {
-            SceneManager.LoadScene("CutScene", LoadSceneMode.Single);
+            SceneManager.LoadScene("CutScene 2", LoadSceneMode.Single);
         }
         else if (FistDetected == false && ScorchedDetected == false && tim.done)
         {
