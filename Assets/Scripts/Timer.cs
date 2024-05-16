@@ -4,16 +4,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
+using UnityEditor.PackageManager;
 
 public class Timer : MonoBehaviour
 {
     private TMP_Text _timerText;
     enum TimerType {Countdown, Stopwatch}
     [SerializeField] private TimerType timerType;
-
+    public bool done;
     [SerializeField] private float timeToDisplay;
 
     private bool _isRunning;
+
+    public void Start()
+    {
+        done = false;
+    }
 
     private void Awake()
     {
@@ -40,16 +46,18 @@ public class Timer : MonoBehaviour
 
     private void EventManagerOnTimerUpdate(float value) => timeToDisplay += value;
     
-    private void Update()
+    void Update()
     {
         if (!_isRunning) return;
         if (timerType == TimerType.Countdown && timeToDisplay < 0.0f)
         {
+            
             Debug.Log("End");
-            SceneManager.LoadScene("Game over");
             EventManager.OnTimerStop();
+            done = true;
             return;
         }
+        else done = false;
         timeToDisplay += timerType == TimerType.Countdown ? -Time.deltaTime : Time.deltaTime;
 
         TimeSpan timeSpan = TimeSpan.FromSeconds(timeToDisplay);

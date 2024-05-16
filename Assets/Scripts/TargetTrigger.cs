@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class TargetTrigger : MonoBehaviour
 {
-
+    public Timer tim;
     public bool FistDetected;
     public bool ScorchedDetected;
 
@@ -26,12 +26,23 @@ public class TargetTrigger : MonoBehaviour
     }
     private void Update()
     {
-        if (FistDetected == true && ScorchedDetected == true)
+        if (FistDetected == true && ScorchedDetected == true && tim.done)
         {
             SceneManager.LoadScene("CutScene", LoadSceneMode.Single);
         }
+        else if (FistDetected == false && ScorchedDetected == false && tim.done)
+        {
+            DOMyShit();
+        }
+        
 
-                         
+
+
+
+    }
+    private void DOMyShit()
+    {
+        SceneManager.LoadScene("Game over");
 
     }
 

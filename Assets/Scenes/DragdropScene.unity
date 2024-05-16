@@ -367,7 +367,7 @@ GameObject:
   - component: {fileID: 1619959118}
   - component: {fileID: 1619959117}
   m_Layer: 0
-  m_Name: FistTarget
+  m_Name: TargetTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -385,6 +385,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93d21f9b915671143891c7ab749961e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FistDetected: 0
+  ScorchedDetected: 0
 --- !u!61 &1619959118
 BoxCollider2D:
   m_ObjectHideFlags: 0
