@@ -37,9 +37,6 @@ public class TargetTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //if (collision.gameObject.tag == "Fist" && collision.gameObject.tag == "ScorchedEarth")
-        //{
-        //    SceneManager.LoadScene("CutScene", LoadSceneMode.Single);
-        //}
+        
     }
 }
