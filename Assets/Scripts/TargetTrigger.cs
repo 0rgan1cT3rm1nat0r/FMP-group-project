@@ -23,6 +23,12 @@ public class TargetTrigger : MonoBehaviour
             ScorchedDetected = true;
             Debug.Log("Earth");
         }
+
+        else
+        {
+            FistDetected = false;
+            ScorchedDetected = false;
+        }
     }
     private void Update()
     {
